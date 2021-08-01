@@ -1,7 +1,7 @@
 from pyfirmata import Arduino, util
 import time
 
-board = Arduino("COM3")
+board = Arduino("/dev/tty.usbserial-110")
 
 loopTimes = input('How many times would you like the LED to blink: ')
 print("Blinking " + loopTimes + " times.")
